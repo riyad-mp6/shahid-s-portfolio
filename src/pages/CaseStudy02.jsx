@@ -60,7 +60,7 @@ export default function CaseStudy02() {
           google={{ leads: "214", cpl: "$13.41", image: GOOGLE_IMG }}
           meta={{ leads: "96", cpl: "$22.71", image: META_IMG }}
         />
-        <CaseConclusion text={CONCLUSION} />
+        <CaseConclusion text= "The main objective was to generate qualified real-estate leads in the Los Angeles market through paid advertising on Google Ads and Meta Ads."; />
       </main>
       <Footer />
       <UpButton />
