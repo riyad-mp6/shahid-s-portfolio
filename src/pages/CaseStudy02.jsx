@@ -37,8 +37,13 @@ const STATS = [
 const OBJECTIVE =
   "The main objective was to generate qualified real-estate leads in the Los Angeles market through paid advertising on Google Ads and Meta Ads.";
 
-const CONCLUSION =
-  "Over a 3-month paid advertising campaign, we generated 310 leads through Google Ads and Meta Ads, including 44 qualified leads and 14 sales, with a total advertising spend of $5,050.";
+const CONCLUSION = (
+  <>
+    Over a 3-month paid advertising campaign, we generated 310 leads through
+    Google Ads and Meta Ads, including 44 qualified leads and 14 sales, with a
+    total advertising spend of $5,050.
+  </>
+);
 
 export default function CaseStudy02() {
   return (
@@ -60,7 +65,7 @@ export default function CaseStudy02() {
           google={{ leads: "214", cpl: "$13.41", image: GOOGLE_IMG }}
           meta={{ leads: "96", cpl: "$22.71", image: META_IMG }}
         />
-        <CaseConclusion text= "The main objective was to generate qualified real-estate leads in the Los Angeles market through paid advertising on Google Ads and Meta Ads."; />
+        <CaseConclusion text={CONCLUSION} />
       </main>
       <Footer />
       <UpButton />
