@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import { Image } from "@public/Image";
+import { Image } from "@/components/ui/image";
 
 const EASE = [0.16, 1, 0.3, 1];
 
@@ -95,10 +95,6 @@ export default function CaseHero({
             )}
           </motion.div>
         </div>
-      </div>
-
-      <div className="mx-auto mt-16 max-w-7xl px-5 sm:mt-24 sm:px-8">
-        <div className="h-px w-full bg-border" />
       </div>
     </section>
   );
