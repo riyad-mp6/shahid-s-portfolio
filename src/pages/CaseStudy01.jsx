@@ -8,66 +8,82 @@ import CaseConclusion from "@/components/portfolio/caseStudy/CaseConclusion";
 import Footer from "@/components/portfolio/Footer";
 import UpButton from "@/components/portfolio/UpButton";
 
-// Project 02 — True Story Realty.
-// These 3 screenshots must be supplied by the user (no images are generated).
-const HERO_IMG = "";   // IMAGE 1 — True Story Realty website screenshot
-const GOOGLE_IMG = ""; // IMAGE 2 — Google Ads dashboard screenshot
-const META_IMG = "";    // IMAGE 3 — Meta Ads dashboard screenshot
+// Project 01 — Align Real Estate.
+// Replace these empty strings with the paths to your actual screenshots.
+const HERO_IMG = "/images/align/website.pngScreenshot 2026-10-02 183352.png";
+const GOOGLE_IMG = "Gemini_Generated_Image_cmdo9ycmdo9ycmdo.jpg";
+const META_IMG = "Gemini_Generated_Image_fvttkufvttkufvtt.jpg";
+// Official client website
+const WEBSITE_URL = "https://alignagents.com/";
 
-// The real True Story Realty website URL was not provided — add it here once known.
-const WEBSITE_URL = "";
-
+// Project information
 const DETAILS = [
-  { label: "Client", value: "True Story Realty" },
+  { label: "Client", value: "Align Real Estate" },
   { label: "Role", value: "Paid Ads Manager" },
-  { label: "Market", value: "Los Angeles, United States" },
+  { label: "Market", value: "Florida, United States" },
   { label: "Duration", value: "3 Months" },
   { label: "Platforms", value: "Google Ads & Meta Ads" },
   { label: "Year", value: "2026" },
 ];
 
+// Campaign results
 const STATS = [
-  { value: "$5,050", label: "Total Ad Spend" },
-  { value: "310", label: "Total Leads" },
-  { value: "$16.29", label: "Average CPL" },
-  { value: "44", label: "Qualified Leads" },
-  { value: "14", label: "Sales" },
+  { value: "$4,584.80", label: "Total Ad Spend" },
+  { value: "282", label: "Total Leads" },
+  { value: "$16.26", label: "Average CPL" },
+  { value: "38", label: "Qualified Leads" },
+  { value: "12", label: "Sales" },
 ];
 
+// Campaign objective
 const OBJECTIVE =
-  "The main objective was to generate qualified real-estate leads in the Los Angeles market through paid advertising on Google Ads and Meta Ads.";
+  "The main objective was to generate qualified real-estate leads in the Florida market through paid advertising on Google Ads and Meta Ads.";
 
-const CONCLUSION = (
-  <>
-    Over a 3-month paid advertising campaign, we generated 310 leads through
-    Google Ads and Meta Ads, including 44 qualified leads and 14 sales, with a
-    total advertising spend of $5,050.
-  </>
-);
+// Conclusion content for this project
+const CONCLUSION =
+  "Over a 3-month paid advertising campaign, we generated 282 leads through Google Ads and Meta Ads, including 38 qualified leads and 12 sales. The campaign generated leads through both advertising platforms and was evaluated based on lead volume, cost per lead, lead quality, and sales performance.";
 
-export default function CaseStudy02() {
+export default function CaseStudy01() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <CaseHeader />
+
       <main>
         <CaseHero
-          subtitle="True Story Realty"
+          subtitle="Align Real Estate"
           image={HERO_IMG}
-          imageAlt="True Story Realty website screenshot"
+          imageAlt="Align Real Estate website screenshot"
           details={DETAILS}
           websiteUrl={WEBSITE_URL}
         />
+
         <CaseObjective text={OBJECTIVE} />
+
         <CaseWhatWeDid />
+
         <CaseProcess />
+
         <CaseResults
           stats={STATS}
-          google={{ leads: "214", cpl: "$13.41", image: GOOGLE_IMG }}
-          meta={{ leads: "96", cpl: "$22.71", image: META_IMG }}
+          google={{
+            leads: "193",
+            cpl: "$12.60",
+            image: GOOGLE_IMG,
+          }}
+          meta={{
+            leads: "89",
+            cpl: "$24.20",
+            image: META_IMG,
+          }}
         />
-        <CaseConclusion text={CONCLUSION} />
+
+        <CaseConclusion>
+          {CONCLUSION}
+        </CaseConclusion>
       </main>
+
       <Footer />
+
       <UpButton />
     </div>
   );
