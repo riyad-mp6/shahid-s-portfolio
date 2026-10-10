@@ -52,4 +52,4 @@ export default function CaseProcess({ title = "Process", steps = [], text }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.6, ease: EASE, delay: 0.2 }}
-            className="mt-6 max-w-3xl text-2xl leading-relaxed
+            className="mt-6 max-w-3xl text-2xl leading-relaxed text-muted-foreground"
