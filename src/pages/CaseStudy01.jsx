@@ -7,15 +7,12 @@ import CaseResults from "@/components/portfolio/caseStudy/CaseResults";
 import CaseConclusion from "@/components/portfolio/caseStudy/CaseConclusion";
 import Footer from "@/components/portfolio/Footer";
 import UpButton from "@/components/portfolio/UpButton";
-import image from "@public/images/align/website.pngScreenshot 2026-10-02 183352.png";
-import image from "@public/images/align/Gemini_Generated_Image_cmdo9ycmdo9ycmdo.jpg";
-import image from "@public/images/align/Gemini_Generated_Image_fvttkufvttkufvtt.jpg";
 
 // Project 01 — Align Real Estate.
 // Replace these empty strings with the paths to your actual screenshots.
-const HERO_IMG = "/images/align/website.pngScreenshot 2026-10-02 183352.png";
-const GOOGLE_IMG = "Gemini_Generated_Image_cmdo9ycmdo9ycmdo.jpg";
-const META_IMG = "Gemini_Generated_Image_fvttkufvttkufvtt.jpg";
+const HERO_IMG = "/images/align/website.png";
+const GOOGLE_IMG = "/images/align/google.ad.1.jpg";
+const META_IMG = "/images/align/facebook.ad.1.jpg";
 // Official client website
 const WEBSITE_URL = "https://alignagents.com/";
 
