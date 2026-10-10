@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Download } from "lucide-react";
-import { scrollToId } from "@/lib/scroll";
+import { ArrowRight } from "lucide-react";
 import { Image } from "@/components/ui/image";
 
 const PROFILE_IMG =

@@ -14,16 +14,11 @@ const fadeUp = {
 };
 
 export default function CaseHero({
-  // @ts-ignore
   title,
-  // @ts-ignore
   subtitle,
-  // @ts-ignore
   image,
   imageAlt = "",
-  // @ts-ignore
   details = [],
-  // @ts-ignore
   websiteUrl,
   websiteLabel = "Visit Website",
 }) {
@@ -64,7 +59,6 @@ export default function CaseHero({
             <div className="relative aspect-square w-full overflow-hidden rounded-2xl border border-white/15 bg-card">
               {image && (
                 <Image
-                  // @ts-ignore
                   src={image}
                   alt={imageAlt}
                   fittingType="fit"
