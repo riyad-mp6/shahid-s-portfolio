@@ -7,6 +7,9 @@ import CaseResults from "@/components/portfolio/caseStudy/CaseResults";
 import CaseConclusion from "@/components/portfolio/caseStudy/CaseConclusion";
 import Footer from "@/components/portfolio/Footer";
 import UpButton from "@/components/portfolio/UpButton";
+import image from "@public/images/align/website.pngScreenshot 2026-10-02 183352.png";
+import image from "@public/images/align/Gemini_Generated_Image_cmdo9ycmdo9ycmdo.jpg";
+import image from "@public/images/align/Gemini_Generated_Image_fvttkufvttkufvtt.jpg";
 
 // Project 01 — Align Real Estate.
 // Replace these empty strings with the paths to your actual screenshots.
