@@ -1,16 +1,11 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
-const STEPS = [
-"Research",
-"Campaign Setup",
-"Launch",
-"Monitor",
-"Optimize",
-"Measure Results"];
+const EASE = [0.16, 1, 0.3, 1];
 
+export default function CaseProcess({ title = "Process", steps = [], text }) {
+  if (steps.length === 0) return null;
 
-export default function CaseProcess() {
   return (
     <section className="relative py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
@@ -18,51 +13,43 @@ export default function CaseProcess() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className="text-xs font-bold uppercase tracking-[0.18em] text-white sm:text-sm">
-          
-          Process
+          transition={{ duration: 0.6, ease: EASE }}
+          className="text-xs font-bold uppercase tracking-[0.18em] text-white sm:text-sm"
+        >
+          {title}
         </motion.h2>
 
-        <div className="mt-8 flex flex-col gap-3 lg:flex-row lg:items-stretch">
-          {STEPS.map((step, i) =>
-          <div key={step} className="flex flex-1 flex-col items-stretch lg:flex-row">
+        <ol className="mt-8 flex flex-col gap-3 lg:flex-row lg:items-stretch">
+          {steps.map((step, i) => (
+            <li key={step} className="flex flex-1 flex-col items-stretch lg:flex-row">
               <motion.div
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1], delay: i * 0.08 }}
-              className="flex flex-1 items-center justify-center rounded-xl border border-border bg-card px-3 py-4 text-center">
-              
-                <span className="font-semibold uppercase tracking-[0.1em] text-white text-lg sm:text-lg">
+                initial={{ opacity: 0, y: 18 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.5, ease: EASE, delay: i * 0.08 }}
+                className="flex flex-1 items-center justify-center rounded-xl border border-border bg-card px-3 py-4 text-center"
+              >
+                <span className="text-lg font-semibold uppercase tracking-[0.1em] text-white">
                   {step}
                 </span>
               </motion.div>
-              {i < STEPS.length - 1 &&
-            <div className="flex items-center justify-center px-0 py-1 lg:px-1">
+
+              {i < steps.length - 1 && (
+                <div
+                  className="flex items-center justify-center px-0 py-1 lg:px-1"
+                  aria-hidden
+                >
                   <ArrowRight className="h-4 w-4 rotate-90 text-muted-foreground lg:rotate-0" />
                 </div>
-            }
-            </div>
-          )}
-        </div>
+              )}
+            </li>
+          ))}
+        </ol>
 
-        <motion.p
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-60px" }}
-          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-          className="mt-6 max-w-3xl leading-relaxed text-muted-foreground text-2xl">
-          
-          The campaigns were monitored throughout the 3-month period and
-          performance was evaluated based on lead volume, cost per lead,
-          qualified leads, and sales.
-        </motion.p>
-      </div>
-
-      <div className="mx-auto mt-16 max-w-7xl px-5 sm:px-8 sm:mt-24">
-        <div className="h-px w-full bg-border" />
-      </div>
-    </section>);
-
-}
+        {text && (
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.6, ease: EASE, delay: 0.2 }}
+            className="mt-6 max-w-3xl text-2xl leading-relaxed
