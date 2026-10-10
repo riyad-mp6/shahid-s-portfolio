@@ -5,18 +5,23 @@ import CaseWhatWeDid from "@/components/portfolio/caseStudy/CaseWhatWeDid";
 import CaseProcess from "@/components/portfolio/caseStudy/CaseProcess";
 import CaseResults from "@/components/portfolio/caseStudy/CaseResults";
 import CaseConclusion from "@/components/portfolio/caseStudy/CaseConclusion";
+import CaseDivider from "@/components/portfolio/caseStudy/CaseDivider";
 import Footer from "@/components/portfolio/Footer";
 import UpButton from "@/components/portfolio/UpButton";
 
-// Project 01 — Align Real Estate.
-// Replace these empty strings with the paths to your actual screenshots.
 const HERO_IMG = "/images/align/website.png";
 const GOOGLE_IMG = "/images/align/google.ad.1.jpg";
 const META_IMG = "/images/align/facebook.ad.1.jpg";
-// Official client website
 const WEBSITE_URL = "https://alignagents.com/";
 
-// Project information
+const TITLE = (
+  <>
+    Real Estate Lead
+    <br />
+    Generation
+  </>
+);
+
 const DETAILS = [
   { label: "Client", value: "Align Real Estate" },
   { label: "Role", value: "Paid Ads Manager" },
@@ -26,7 +31,29 @@ const DETAILS = [
   { label: "Year", value: "2026" },
 ];
 
-// Campaign results
+const OBJECTIVE =
+  "The main objective was to generate qualified real-estate leads in the Florida market through paid advertising on Google Ads and Meta Ads.";
+
+const WHAT_WE_DID = [
+  "Paid campaign management",
+  "Lead generation",
+  "Campaign optimization",
+  "Performance monitoring",
+  "Cost-per-lead analysis",
+];
+
+const PROCESS_STEPS = [
+  "Research",
+  "Campaign Setup",
+  "Launch",
+  "Monitor",
+  "Optimize",
+  "Measure Results",
+];
+
+const PROCESS_TEXT =
+  "The campaigns were monitored throughout the 3-month period and performance was evaluated based on lead volume, cost per lead, qualified leads, and sales.";
+
 const STATS = [
   { value: "$4,584.80", label: "Total Ad Spend" },
   { value: "282", label: "Total Leads" },
@@ -35,11 +62,21 @@ const STATS = [
   { value: "12", label: "Sales" },
 ];
 
-// Campaign objective
-const OBJECTIVE =
-  "The main objective was to generate qualified real-estate leads in the Florida market through paid advertising on Google Ads and Meta Ads.";
+const PLATFORMS = [
+  {
+    name: "Google Ads",
+    summary: "193 Leads · $12.60 CPL",
+    image: GOOGLE_IMG,
+    imageAlt: "Google Ads dashboard performance",
+  },
+  {
+    name: "Meta Ads",
+    summary: "89 Leads · $24.20 CPL",
+    image: META_IMG,
+    imageAlt: "Meta Ads dashboard performance",
+  },
+];
 
-// Conclusion content for this project
 const CONCLUSION =
   "Over a 3-month paid advertising campaign, we generated 282 leads through Google Ads and Meta Ads, including 38 qualified leads and 12 sales. The campaign generated leads through both advertising platforms and was evaluated based on lead volume, cost per lead, lead quality, and sales performance.";
 
@@ -50,40 +87,26 @@ export default function CaseStudy01() {
 
       <main>
         <CaseHero
+          title={TITLE}
           subtitle="Align Real Estate"
           image={HERO_IMG}
           imageAlt="Align Real Estate website screenshot"
           details={DETAILS}
           websiteUrl={WEBSITE_URL}
         />
-
+        <CaseDivider />
         <CaseObjective text={OBJECTIVE} />
-
-        <CaseWhatWeDid />
-
-        <CaseProcess />
-
-        <CaseResults
-          stats={STATS}
-          google={{
-            leads: "193",
-            cpl: "$12.60",
-            image: GOOGLE_IMG,
-          }}
-          meta={{
-            leads: "89",
-            cpl: "$24.20",
-            image: META_IMG,
-          }}
-        />
-
-        <CaseConclusion>
-          {CONCLUSION}
-        </CaseConclusion>
+        <CaseDivider />
+        <CaseWhatWeDid items={WHAT_WE_DID} />
+        <CaseDivider />
+        <CaseProcess steps={PROCESS_STEPS} text={PROCESS_TEXT} />
+        <CaseDivider />
+        <CaseResults stats={STATS} platforms={PLATFORMS} />
+        <CaseDivider />
+        <CaseConclusion>{CONCLUSION}</CaseConclusion>
       </main>
 
       <Footer />
-
       <UpButton />
     </div>
   );
