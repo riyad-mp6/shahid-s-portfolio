@@ -8,14 +8,21 @@ import CaseConclusion from "@/components/portfolio/caseStudy/CaseConclusion";
 import Footer from "@/components/portfolio/Footer";
 import UpButton from "@/components/portfolio/UpButton";
 
-// Project 02 — True Story Realty.
-// These 3 screenshots must be supplied by the user (no images are generated).
-const HERO_IMG = "";   // IMAGE 1 — True Story Realty website screenshot
-const GOOGLE_IMG = ""; // IMAGE 2 — Google Ads dashboard screenshot
-const META_IMG = "";    // IMAGE 3 — Meta Ads dashboard screenshot
+// Put images in public/images/true-story/ and set the paths.
+const HERO_IMG = "";   // e.g. "/images/true-story/website.png"
+const GOOGLE_IMG = ""; // e.g. "/images/true-story/google-ads.jpg"
+const META_IMG = "";   // e.g. "/images/true-story/meta-ads.jpg"
 
-// The real True Story Realty website URL was not provided — add it here once known.
+// Add the real website URL when known. Empty hides the button.
 const WEBSITE_URL = "";
+
+const TITLE = (
+  <>
+    Real Estate Lead
+    <br />
+    Generation
+  </>
+);
 
 const DETAILS = [
   { label: "Client", value: "True Story Realty" },
@@ -26,6 +33,29 @@ const DETAILS = [
   { label: "Year", value: "2026" },
 ];
 
+const OBJECTIVE =
+  "The main objective was to generate qualified real-estate leads in the Los Angeles market through paid advertising on Google Ads and Meta Ads.";
+
+const WHAT_WE_DID = [
+  "Paid campaign management",
+  "Lead generation",
+  "Campaign optimization",
+  "Performance monitoring",
+  "Cost-per-lead analysis",
+];
+
+const PROCESS_STEPS = [
+  "Research",
+  "Campaign Setup",
+  "Launch",
+  "Monitor",
+  "Optimize",
+  "Measure Results",
+];
+
+const PROCESS_TEXT =
+  "The campaigns were monitored throughout the 3-month period and performance was evaluated based on lead volume, cost per lead, qualified leads, and sales.";
+
 const STATS = [
   { value: "$5,050", label: "Total Ad Spend" },
   { value: "310", label: "Total Leads" },
@@ -34,16 +64,23 @@ const STATS = [
   { value: "14", label: "Sales" },
 ];
 
-const OBJECTIVE =
-  "The main objective was to generate qualified real-estate leads in the Los Angeles market through paid advertising on Google Ads and Meta Ads.";
+const PLATFORMS = [
+  {
+    name: "Google Ads",
+    summary: "214 Leads · $13.41 CPL",
+    image: GOOGLE_IMG,
+    imageAlt: "Google Ads dashboard performance",
+  },
+  {
+    name: "Meta Ads",
+    summary: "96 Leads · $22.71 CPL",
+    image: META_IMG,
+    imageAlt: "Meta Ads dashboard performance",
+  },
+];
 
-const CONCLUSION = (
-  <>
-    Over a 3-month paid advertising campaign, we generated 310 leads through
-    Google Ads and Meta Ads, including 44 qualified leads and 14 sales, with a
-    total advertising spend of $5,050.
-  </>
-);
+const CONCLUSION =
+  "Over a 3-month paid advertising campaign, we generated 310 leads through Google Ads and Meta Ads, including 44 qualified leads and 14 sales, with a total advertising spend of $5,050.";
 
 export default function CaseStudy02() {
   return (
@@ -51,6 +88,7 @@ export default function CaseStudy02() {
       <CaseHeader />
       <main>
         <CaseHero
+          title={TITLE}
           subtitle="True Story Realty"
           image={HERO_IMG}
           imageAlt="True Story Realty website screenshot"
@@ -58,14 +96,10 @@ export default function CaseStudy02() {
           websiteUrl={WEBSITE_URL}
         />
         <CaseObjective text={OBJECTIVE} />
-        <CaseWhatWeDid />
-        <CaseProcess />
-        <CaseResults
-          stats={STATS}
-          google={{ leads: "214", cpl: "$13.41", image: GOOGLE_IMG }}
-          meta={{ leads: "96", cpl: "$22.71", image: META_IMG }}
-        />
-        <CaseConclusion text={CONCLUSION} />
+        <CaseWhatWeDid items={WHAT_WE_DID} />
+        <CaseProcess steps={PROCESS_STEPS} text={PROCESS_TEXT} />
+        <CaseResults stats={STATS} platforms={PLATFORMS} />
+        <CaseConclusion>{CONCLUSION}</CaseConclusion>
       </main>
       <Footer />
       <UpButton />
