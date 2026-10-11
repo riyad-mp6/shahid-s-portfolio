@@ -5,7 +5,6 @@ import CaseWhatWeDid from "@/components/portfolio/caseStudy/CaseWhatWeDid";
 import CaseProcess from "@/components/portfolio/caseStudy/CaseProcess";
 import CaseResults from "@/components/portfolio/caseStudy/CaseResults";
 import CaseConclusion from "@/components/portfolio/caseStudy/CaseConclusion";
-import CaseDivider from "@/components/portfolio/caseStudy/CaseDivider";
 import Footer from "@/components/portfolio/Footer";
 import UpButton from "@/components/portfolio/UpButton";
 
@@ -94,15 +93,10 @@ export default function CaseStudy01() {
           details={DETAILS}
           websiteUrl={WEBSITE_URL}
         />
-        <CaseDivider />
         <CaseObjective text={OBJECTIVE} />
-        <CaseDivider />
         <CaseWhatWeDid items={WHAT_WE_DID} />
-        <CaseDivider />
         <CaseProcess steps={PROCESS_STEPS} text={PROCESS_TEXT} />
-        <CaseDivider />
         <CaseResults stats={STATS} platforms={PLATFORMS} />
-        <CaseDivider />
         <CaseConclusion>{CONCLUSION}</CaseConclusion>
       </main>
 
