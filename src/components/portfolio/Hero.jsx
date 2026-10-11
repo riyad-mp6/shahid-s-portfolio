@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowDown, Download } from "lucide-react";
 import { Image } from "@/components/ui/image";
 
 const PROFILE_IMG =
@@ -13,6 +13,10 @@ const fadeUp = {
     transition: { duration: 0.8, delay: i * 0.12, ease: [0.16, 1, 0.3, 1] },
   }),
 };
+
+function scrollToId(id) {
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
 
 export default function Hero() {
   return (
