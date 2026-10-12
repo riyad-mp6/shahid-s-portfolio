@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Image } from "@/components/ui/image";
 
 const EASE = [0.16, 1, 0.3, 1];
 
@@ -84,11 +83,11 @@ export default function CaseResults({
                     transition={{ duration: 0.7, ease: EASE }}
                     className="mt-5 aspect-[16/10] w-full overflow-hidden rounded-2xl border border-white/15 bg-card"
                   >
-                    <Image
+                    <img
                       src={p.image}
                       alt={p.imageAlt || `${p.name} performance`}
-                      fittingType="fit"
-                      className="h-full w-full"
+                      loading="lazy"
+                      className="h-full w-full object-contain"
                     />
                   </motion.div>
                 )}
