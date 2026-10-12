@@ -8,14 +8,11 @@ import CaseConclusion from "@/components/portfolio/caseStudy/CaseConclusion";
 import Footer from "@/components/portfolio/Footer";
 import UpButton from "@/components/portfolio/UpButton";
 
-// Project 02 — True Story Realty.
-// These 3 screenshots must be supplied by the user (no images are generated).
-const HERO_IMG = "";   // IMAGE 1 — True Story Realty website screenshot
-const GOOGLE_IMG = ""; // IMAGE 2 — Google Ads dashboard screenshot
-const META_IMG = "";    // IMAGE 3 — Meta Ads dashboard screenshot
+const HERO_IMG = "/images/truestory/truestory-fb.jpg";
+const GOOGLE_IMG = "/images/truestory/truestory-google.jpg";
+const META_IMG = "/images/truestory/truestory-website.png";
 
-// The real True Story Realty website URL was not provided — add it here once known.
-const WEBSITE_URL = "";
+const WEBSITE_URL = "https://truestoryrealty.com/";
 
 const DETAILS = [
   { label: "Client", value: "True Story Realty" },
