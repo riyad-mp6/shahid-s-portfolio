@@ -8,21 +8,14 @@ import CaseConclusion from "@/components/portfolio/caseStudy/CaseConclusion";
 import Footer from "@/components/portfolio/Footer";
 import UpButton from "@/components/portfolio/UpButton";
 
-// Put images in public/images/true-story/ and set the paths.
-const HERO_IMG = "";   // e.g. "/images/true-story/website.png"
-const GOOGLE_IMG = ""; // e.g. "/images/true-story/google-ads.jpg"
-const META_IMG = "";   // e.g. "/images/true-story/meta-ads.jpg"
+// Project 02 — True Story Realty.
+// These 3 screenshots must be supplied by the user (no images are generated).
+const HERO_IMG = "";   // IMAGE 1 — True Story Realty website screenshot
+const GOOGLE_IMG = ""; // IMAGE 2 — Google Ads dashboard screenshot
+const META_IMG = "";    // IMAGE 3 — Meta Ads dashboard screenshot
 
-// Add the real website URL when known. Empty hides the button.
+// The real True Story Realty website URL was not provided — add it here once known.
 const WEBSITE_URL = "";
-
-const TITLE = (
-  <>
-    Real Estate Lead
-    <br />
-    Generation
-  </>
-);
 
 const DETAILS = [
   { label: "Client", value: "True Story Realty" },
@@ -30,8 +23,31 @@ const DETAILS = [
   { label: "Market", value: "Los Angeles, United States" },
   { label: "Duration", value: "3 Months" },
   { label: "Platforms", value: "Google Ads & Meta Ads" },
-  { label: "Year", value: "2026" },
+  { label: "Year", value: "(jan-mar) 2026" },
 ];
+
+const OBJECTIVE =
+  "The main objective was to generate qualified real-estate leads in the Los Angeles market through paid advertising on Google Ads and Meta Ads.";
+
+const WHAT_WE_DID = [
+  "Paid campaign management",
+  "Lead generation",
+  "Campaign optimization",
+  "Performance monitoring",
+  "Cost-per-lead analysis",
+];
+
+const PROCESS_STEPS = [
+  "Research",
+  "Campaign Setup",
+  "Launch",
+  "Monitor",
+  "Optimize",
+  "Measure Results",
+];
+
+const PROCESS_TEXT =
+  "The campaigns were monitored throughout the 3-month period and performance was evaluated based on lead volume, cost per lead, qualified leads, and sales.";
 
 const OBJECTIVE =
   "The main objective was to generate qualified real-estate leads in the Los Angeles market through paid advertising on Google Ads and Meta Ads.";

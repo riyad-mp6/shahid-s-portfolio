@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import { Image } from "@/components/ui/image";
 
 const EASE = [0.16, 1, 0.3, 1];
 
@@ -58,11 +57,11 @@ export default function CaseHero({
           >
             <div className="relative aspect-square w-full overflow-hidden rounded-2xl border border-white/15 bg-card">
               {image && (
-                <Image
+                <img
                   src={image}
                   alt={imageAlt}
-                  fittingType="fit"
-                  className="h-full w-full"
+                  loading="eager"
+                  className="h-full w-full object-contain"
                 />
               )}
             </div>
