@@ -29,7 +29,7 @@ const DETAILS = [
   { label: "Market", value: "Los Angeles, United States" },
   { label: "Duration", value: "3 Months" },
   { label: "Platforms", value: "Google Ads & Meta Ads" },
-  { label: "Year", value: "2026" },
+  { label: "Year", value: "(jan-mar) 2026" },
 ];
 
 const OBJECTIVE =
