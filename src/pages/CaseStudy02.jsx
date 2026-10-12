@@ -8,13 +8,12 @@ import CaseConclusion from "@/components/portfolio/caseStudy/CaseConclusion";
 import Footer from "@/components/portfolio/Footer";
 import UpButton from "@/components/portfolio/UpButton";
 
-// Put images in public/images/true-story/ and set the paths.
-const HERO_IMG = "";   // e.g. "/images/true-story/website.png"
-const GOOGLE_IMG = ""; // e.g. "/images/true-story/google-ads.jpg"
-const META_IMG = "";   // e.g. "/images/true-story/meta-ads.jpg"
 
-// Add the real website URL when known. Empty hides the button.
-const WEBSITE_URL = "";
+const HERO_IMG = "/images/truestory/truestory-fb.jpg";
+const GOOGLE_IMG = "/images/truestory/truestory-google.jpg";
+const META_IMG = "/images/truestory/truestory-website.png";
+
+const WEBSITE_URL = "https://truestoryrealty.com/";
 
 const TITLE = (
   <>
