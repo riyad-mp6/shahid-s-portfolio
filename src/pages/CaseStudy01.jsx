@@ -8,9 +8,9 @@ import CaseConclusion from "@/components/portfolio/caseStudy/CaseConclusion";
 import Footer from "@/components/portfolio/Footer";
 import UpButton from "@/components/portfolio/UpButton";
 
-const HERO_IMG = "/images/align/website.png";
-const GOOGLE_IMG = "/images/align/google.ad.1.jpg";
-const META_IMG = "/images/align/facebook.ad.1.jpg";
+const HERO_IMG = "C:\\my website backup\\shahid's portfolio\\public\\image\\aline\\website1.png";
+const GOOGLE_IMG = "C:\\my website backup\\shahid's portfolio\\public\\image\\aline\\google.ad1.jpg";
+const META_IMG = "C:\\my website backup\\shahid's portfolio\\public\\image\\aline\\facebook.ad.1.jpg";
 const WEBSITE_URL = "https://alignagents.com/";
 
 const TITLE = (
