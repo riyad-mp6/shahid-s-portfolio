@@ -8,11 +8,19 @@ import CaseConclusion from "@/components/portfolio/caseStudy/CaseConclusion";
 import Footer from "@/components/portfolio/Footer";
 import UpButton from "@/components/portfolio/UpButton";
 
-const HERO_IMG = "/images/truestory/truestory-fb.jpg";
-const GOOGLE_IMG = "/images/truestory/truestory-google.jpg";
-const META_IMG = "/images/truestory/truestory-website.png";
+const HERO_IMG = "/image/truestory/website.png";
+const GOOGLE_IMG = "/image/truestory/google.ad.1.jpg";
+const META_IMG = "/image/truestory/facebook.ad.1.jpg";
 
-const WEBSITE_URL = "https://truestoryrealty.com/";
+const WEBSITE_URL = "";
+
+const TITLE = (
+  <>
+    Real Estate Lead
+    <br />
+    Generation
+  </>
+);
 
 const DETAILS = [
   { label: "Client", value: "True Story Realty" },
@@ -20,31 +28,8 @@ const DETAILS = [
   { label: "Market", value: "Los Angeles, United States" },
   { label: "Duration", value: "3 Months" },
   { label: "Platforms", value: "Google Ads & Meta Ads" },
-  { label: "Year", value: "(jan-mar) 2026" },
+  { label: "Year", value: "(Jan-Mar) 2026" },
 ];
-
-const OBJECTIVE =
-  "The main objective was to generate qualified real-estate leads in the Los Angeles market through paid advertising on Google Ads and Meta Ads.";
-
-const WHAT_WE_DID = [
-  "Paid campaign management",
-  "Lead generation",
-  "Campaign optimization",
-  "Performance monitoring",
-  "Cost-per-lead analysis",
-];
-
-const PROCESS_STEPS = [
-  "Research",
-  "Campaign Setup",
-  "Launch",
-  "Monitor",
-  "Optimize",
-  "Measure Results",
-];
-
-const PROCESS_TEXT =
-  "The campaigns were monitored throughout the 3-month period and performance was evaluated based on lead volume, cost per lead, qualified leads, and sales.";
 
 const OBJECTIVE =
   "The main objective was to generate qualified real-estate leads in the Los Angeles market through paid advertising on Google Ads and Meta Ads.";
