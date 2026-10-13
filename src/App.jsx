@@ -6,10 +6,16 @@ import PageNotFound from './lib/PageNotFound';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import ScrollToTop from './components/ScrollToTop';
-// Add page imports here
 import Home from '@/pages/Home';
-import CaseStudy01 from '@/pages/CaseStudy01';
-import CaseStudy02 from '@/pages/CaseStudy02';
+
+// Auto-loads every src/pages/CaseStudy##.jsx as /case-study/##
+const caseModules = import.meta.glob("./pages/CaseStudy[0-9]*.jsx", { eager: true });
+
+const caseRoutes = Object.entries(caseModules).map(([file, mod]) => {
+  const num = file.match(/CaseStudy(\d+)\.jsx$/)[1];
+  const Page = mod.default;
+  return <Route key={num} path={`/case-study/${num}`} element={<Page />} />;
+});
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -37,18 +43,14 @@ const AuthenticatedApp = () => {
   // Render the main app
   return (
     <Routes>
-      {/* Add your page Route elements here */}
       <Route path="/" element={<Home />} />
-      <Route path="/case-study/01" element={<CaseStudy01 />} />
-      <Route path="/case-study/02" element={<CaseStudy02 />} />
+      {caseRoutes}
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
 };
 
-
 function App() {
-
   return (
     <AuthProvider>
       <QueryClientProvider client={queryClientInstance}>
