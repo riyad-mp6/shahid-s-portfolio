@@ -49,19 +49,19 @@ export default function CaseHero({
           </motion.p>
         )}
 
-        <div className="mt-10 grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-12">
+        <div className="mt-10 grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-12">
           <motion.div
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.9, ease: EASE, delay: 0.2 }}
           >
-            <div className="relative aspect-square w-full overflow-hidden rounded-2xl border border-white/15 bg-card">
+            <div className="relative min-h-[16rem] w-full overflow-hidden rounded-2xl border border-white/15 bg-card">
               {image && (
                 <img
                   src={image}
                   alt={imageAlt}
                   loading="eager"
-                  className="h-full w-full object-contain"
+                  className="block h-auto w-full"
                 />
               )}
             </div>
