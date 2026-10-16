@@ -5,7 +5,7 @@ const CASES = [
   { n: "01", title: "Real Estate Lead Engine", category: "Real Estate", live: true },
   { n: "02", title: "Property Funnel System", category: "Real Estate", live: true },
   { n: "03", title: "D2C Store Scale-Up", category: "E-commerce", live: true },
-  { n: "04", title: "Meta Ads ROAS Lift", category: "E-commerce" },
+  { n: "04", title: "Meta Ads ROAS Lift", category: "E-commerce", live: true },
   { n: "05", title: "Shopping Feed Optimization", category: "E-commerce" },
   { n: "06", title: "B2B SaaS Pipeline Build", category: "SaaS" },
   { n: "07", title: "Local Service Lead Flow", category: "Home Services" },
