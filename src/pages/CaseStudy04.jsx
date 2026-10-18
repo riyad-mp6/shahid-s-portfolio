@@ -9,12 +9,12 @@ import Footer from "@/components/portfolio/Footer";
 import UpButton from "@/components/portfolio/UpButton";
 
 // Add later, e.g. "/image/hikoco/website.png"
-const HERO_IMG = "";
-const GOOGLE_IMG = "";
-const META_IMG = "";
+const HERO_IMG = "/image/Hikoco/hikoco-website.png";
+const GOOGLE_IMG = "/image/Hikoco/google-ads4.png";
+const META_IMG = "/image/Hikoco/fb-ad4.jpeg";
 
 // Empty hides the button
-const WEBSITE_URL = "";
+const WEBSITE_URL = "https://hikoco.co.nz/";
 
 const TITLE = (
   <>
