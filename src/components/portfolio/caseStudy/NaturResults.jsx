@@ -43,23 +43,18 @@ export default function NaturResults({
           </div>
         )}
 
-        {/* Image frame: always shown, empty until you add an image */}
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-60px" }}
-          transition={{ duration: 0.7, ease: EASE }}
-          className="relative mt-8 min-h-[16rem] w-full overflow-hidden rounded-2xl border border-white/15 bg-card"
-        >
-          {image && (
-            <img
-              src={image}
-              alt={imageAlt}
-              loading="lazy"
-              className="block h-auto w-full"
-            />
-          )}
-        </motion.div>
+        {image && (
+          <motion.img
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.7, ease: EASE }}
+            src={image}
+            alt={imageAlt}
+            loading="lazy"
+            className="mt-8 block h-auto w-full"
+          />
+        )}
       </div>
     </section>
   );

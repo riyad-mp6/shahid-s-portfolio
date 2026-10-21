@@ -90,23 +90,18 @@ export default function HikocoResults({
                   </div>
                 )}
 
-                {/* Image frame: always shown, empty until you add an image */}
-                <motion.div
-                  initial={{ opacity: 0, y: 24 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-60px" }}
-                  transition={{ duration: 0.7, ease: EASE }}
-                  className="relative mt-5 min-h-[16rem] w-full overflow-hidden rounded-2xl border border-white/15 bg-card"
-                >
-                  {p.image && (
-                    <img
-                      src={p.image}
-                      alt={p.imageAlt || `${p.name} performance`}
-                      loading="lazy"
-                      className="block h-auto w-full"
-                    />
-                  )}
-                </motion.div>
+                {p.image && (
+                  <motion.img
+                    initial={{ opacity: 0, y: 24 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-60px" }}
+                    transition={{ duration: 0.7, ease: EASE }}
+                    src={p.image}
+                    alt={p.imageAlt || `${p.name} performance`}
+                    loading="lazy"
+                    className="mt-5 block h-auto w-full"
+                  />
+                )}
               </div>
             ))}
           </>
