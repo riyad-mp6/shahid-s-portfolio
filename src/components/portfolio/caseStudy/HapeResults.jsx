@@ -95,23 +95,18 @@ export default function HapeResults({
                   </div>
                 )}
 
-                {/* Image frame: always shown, empty until you add an image */}
-                <motion.div
-                  initial={{ opacity: 0, y: 24 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-60px" }}
-                  transition={{ duration: 0.7, ease: EASE }}
-                  className="mt-5 aspect-[16/10] w-full overflow-hidden rounded-2xl border border-white/15 bg-card"
-                >
-                  {p.image && (
-                    <img
-                      src={p.image}
-                      alt={p.imageAlt || `${p.name} performance`}
-                      loading="lazy"
-                      className="h-full w-full object-contain"
-                    />
-                  )}
-                </motion.div>
+                {p.image && (
+                  <motion.img
+                    initial={{ opacity: 0, y: 24 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-60px" }}
+                    transition={{ duration: 0.7, ease: EASE }}
+                    src={p.image}
+                    alt={p.imageAlt || `${p.name} performance`}
+                    loading="lazy"
+                    className="mt-5 block h-auto w-full"
+                  />
+                )}
               </div>
             ))}
           </>
