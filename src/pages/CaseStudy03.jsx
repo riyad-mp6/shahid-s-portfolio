@@ -11,7 +11,7 @@ import UpButton from "@/components/portfolio/UpButton";
 
 const HERO_IMG = "/image/hapetoys/website.3.png";
 const GOOGLE_IMG = "/image/hapetoys/google.3.png";
-const META_IMG = "/image/hapetoys/fb.3.jpeg";
+const META_IMG = "/image/hapetoys/Screenshot204658.png";
 
 const WEBSITE_URL = "https://toys.hape.com/";
 
