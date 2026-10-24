@@ -10,7 +10,7 @@ import UpButton from "@/components/portfolio/UpButton";
 
 const HERO_IMG = "/image/aline/website1.png";
 const GOOGLE_IMG = "/image/aline/google.ad1.jpg";
-const META_IMG = "/image/aline/Screenshot 2025-10-24 110823.png";
+const META_IMG = "/image/aline/Screenshot191539.png";
 const WEBSITE_URL = "https://alignagents.com/";
 
 const TITLE = (
