@@ -10,7 +10,7 @@ import UpButton from "@/components/portfolio/UpButton";
 
 const HERO_IMG = "/image/nutracheck/website5.png";
 const GOOGLE_IMG = "/image/nutracheck/google5.png";
-const META_IMG = "/image/nutracheck/fbads6.png";
+const META_IMG = "/image/nutracheck/Screenshot181058.png";
 
 const WEBSITE_URL = "https://www.nutracheck.co.uk/";
 
