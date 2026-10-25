@@ -10,7 +10,7 @@ import UpButton from "@/components/portfolio/UpButton";
 
 // Add later, e.g. "/image/hikoco/website.png"
 const HERO_IMG = "/image/Hikoco/hikoco-website.png";
-const GOOGLE_IMG = "/image/Hikoco/google-ads4.png";
+const GOOGLE_IMG = "/image/Hikoco/Screenshot192357.png";
 const META_IMG = "/image/Hikoco/Screenshot170745.png";
 
 // Empty hides the button

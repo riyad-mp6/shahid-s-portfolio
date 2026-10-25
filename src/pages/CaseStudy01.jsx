@@ -9,7 +9,7 @@ import Footer from "@/components/portfolio/Footer";
 import UpButton from "@/components/portfolio/UpButton";
 
 const HERO_IMG = "/image/aline/website1.png";
-const GOOGLE_IMG = "/image/aline/google.ad1.jpg";
+const GOOGLE_IMG = "/image/aline/Screenshot190507.png";
 const META_IMG = "/image/aline/Screenshot191539.png";
 const WEBSITE_URL = "https://alignagents.com/";
 
