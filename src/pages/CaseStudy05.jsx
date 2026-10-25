@@ -27,7 +27,7 @@ const DETAILS = [
   { label: "Brand", value: "NATURBUMMLER" },
   { label: "Industry", value: "E-commerce — Eco-Friendly Products" },
   { label: "Role", value: "Amazon Brand PPC" },
-  { label: "Market", value: "Amazon US" },
+  { label: "Market", value: "Amazon" },
   { label: "Duration", value: "6 Months" },
   { label: "Period", value: "Sep 2024 – Feb 2025" },
 ];
