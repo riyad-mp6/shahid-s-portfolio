@@ -34,7 +34,7 @@ const DETAILS = [
 ];
 
 const OBJECTIVE =
-  "The primary objective was to drive e-commerce sales for Hape Toys over a four-month period, from August to November 2025, using Google Ads and Meta Ads. The campaign focused on attracting potential customers, driving product-page traffic, and converting shopping interest into purchases while monitoring advertising costs and sales performance.";
+  "The primary objective was to drive e-commerce sales for Hape Toys, using Google Ads and Meta Ads. The campaign focused on attracting potential customers, driving product-page traffic, and converting shopping interest into purchases while monitoring advertising costs and sales performance.";
 
 const WHAT_WE_DID = [
   {
@@ -62,31 +62,25 @@ const WHAT_WE_DID = [
 const PROCESS_STEPS = [
   {
     title: "Product & Audience Research",
-    text: "Reviewed product offerings, customer interests, and potential audiences to guide campaign planning.",
   },
   {
     title: "Channel & Campaign Planning",
-    text: "Structured Google Ads and Meta Ads campaigns around product discovery, shopping intent, and purchase acquisition.",
   },
   {
     title: "Campaign & Creative Launch",
-    text: "Set up campaigns, organized product promotions, and prepared advertising assets to attract potential buyers.",
   },
   {
     title: "Performance & Purchase Optimization",
-    text: "Monitored clicks, purchase activity, cost per purchase, and campaign efficiency to identify opportunities for improvement.",
   },
   {
     title: "Budget & Product Performance Review",
-    text: "Evaluated campaign performance across advertising platforms to understand which products and campaigns justified further investment.",
   },
   {
     title: "Revenue & Attribution Analysis",
-    text: "Compared platform-reported results with available store sales data to assess advertising performance and avoid double-counting purchases.",
   },
 ];
 
-const PROCESS_TEXT = "Research → Plan → Build → Test → Optimize → Analyze";
+const PROCESS_TEXT = "";
 
 const STATS = [
   { value: "$32,000", label: "Total Ad Spend" },

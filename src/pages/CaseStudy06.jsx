@@ -24,10 +24,11 @@ const TITLE = (
 
 const DETAILS = [
   { label: "Brand", value: "Nutracheck" },
-  { label: "Product", value: "Calorie Counter +" },
-  { label: "Industry", value: "Health & Fitness · Mobile App" },
+  { label: "App", value: "Calorie Counter +" },
+  { label: "Industry", value: "Health & Fitness" },
   { label: "Market", value: "United Kingdom" },
   { label: "Platforms", value: "Google Ads & Meta Ads" },
+   { label: "Year", value: "2024" },
 ];
 
 const OBJECTIVE =

@@ -25,9 +25,9 @@ const TITLE = (
 
 const DETAILS = [
   { label: "Brand", value: "NATURBUMMLER" },
-  { label: "Industry", value: "E-commerce — Eco-Friendly Products" },
+  { label: "Industry", value: "E-commerce — Outdoor Gear and Rooftop Tents" },
   { label: "Role", value: "Amazon Brand PPC" },
-  { label: "Market", value: "Amazon" },
+  { label: "Platform", value: "Amazon" },
   { label: "Duration", value: "6 Months" },
   { label: "Period", value: "Sep 2024 – Feb 2025" },
 ];
@@ -69,12 +69,9 @@ const PROCESS_TEXT =
   "Over six months, the approach combined advertising optimization, listing improvements, and external traffic to address performance bottlenecks and support marketplace growth.";
 
 const STATS = [
-  { value: "7,976", label: "Total Units Ordered" },
-  { value: "€250.1k", label: "Ordered Product Sales" },
   { value: "6,550", label: "Total Order Items" },
+  { value: "€250.1k", label: "Ordered Product Sales" },
   { value: "€38.18", label: "Average Sales / Order Item" },
-  { value: "1.22", label: "Average Units / Order Item" },
-  { value: "18.4%", label: "Lowest Monthly ACoS" },
 ];
 
 const CONCLUSION =
