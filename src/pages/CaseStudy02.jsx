@@ -9,7 +9,7 @@ import Footer from "@/components/portfolio/Footer";
 import UpButton from "@/components/portfolio/UpButton";
 
 const HERO_IMG = "/image/truestory/website.png";
-const GOOGLE_IMG = "/image/truestory/google.ad.1.jpg";
+const GOOGLE_IMG = "/image/truestory/Screenshot225018.png";
 const META_IMG = "/image/truestory/Screenshot182920.png";
 
 const WEBSITE_URL = "https://truestoryrealty.com/";
