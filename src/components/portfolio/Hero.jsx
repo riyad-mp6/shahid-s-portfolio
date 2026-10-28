@@ -3,7 +3,7 @@ import { ArrowDown, Download } from "lucide-react";
 import { Image } from "@/components/ui/image";
 
 const PROFILE_IMG =
-  "https://media.base44.com/images/public/user_6ab7ecf034aadfd5ab878f7f/e0f4895a3_photo_2026-08-28_12-12-49-removebg-preview.png";
+  "/image/profile/photo54535.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
