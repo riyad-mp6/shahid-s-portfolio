@@ -8,7 +8,7 @@ const CASES = [
   { n: "04", title: "Meta Ads ROAS Lift", category: "E-commerce", live: true },
   { n: "05", title: "Shopping Feed Optimization", category: "E-commerce", live: true },
   { n: "06", title: "B2B SaaS Pipeline Build", category: "SaaS", live: true },
-  { n: "07", title: "Local Service Lead Flow", category: "Home Services" },
+  { n: "07", title: "Local Service Lead Flow", category: "Home Services", live: true },
 ];
 
 export default function CaseStudies() {
