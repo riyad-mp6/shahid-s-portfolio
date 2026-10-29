@@ -8,7 +8,7 @@ export default function NaturWhatWeDid({ title = "What We Did", items = [] }) {
   return (
     <section className="relative overflow-hidden py-16 sm:py-24">
       <div
-        className="pointer-events-none absolute right-0 top-1/3 h-[24rem] w-[12rem] rounded-l-full bg-white/10 blur-3xl"
+        className="pointer-events-none absolute right-0 top-1/3 h-[24rem] w-[12rem] rounded-l-full"
         aria-hidden
       />
 

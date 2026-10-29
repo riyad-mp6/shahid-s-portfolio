@@ -2,23 +2,20 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
 const CASES = [
-  { n: "01", title: "Real Estate Lead Engine", category: "Real Estate", live: true },
-  { n: "02", title: "Property Funnel System", category: "Real Estate", live: true },
-  { n: "03", title: "D2C Store Scale-Up", category: "E-commerce", live: true },
-  { n: "04", title: "Meta Ads ROAS Lift", category: "E-commerce", live: true },
-  { n: "05", title: "Shopping Feed Optimization", category: "E-commerce", live: true },
-  { n: "06", title: "B2B SaaS Pipeline Build", category: "SaaS", live: true },
-  { n: "07", title: "Local Service Lead Flow", category: "Home Services", live: true },
+
+  { n: "01", title: "Real Estate", category: "Align", live: true },
+  { n: "02", title: "Real Estate", category: "TrueStory", live: true },
+  { n: "03", title: "E-commerce", category: "HapeHolding", live: true },
+  { n: "04", title: "E-commerce", category: "Hikoco", live: true },
+  { n: "05", title: "E-commerce", category: "Naturbummlern", live: true },
+  { n: "06", title: "SaaS", category: "Nutracheck", live: true },
+  { n: "07", title: "Home Services", category: "ActionRoofing", live: true },
+
 ];
 
 export default function CaseStudies() {
   return (
     <section id="case-studies" className="relative py-16 sm:py-24">
-      <div
-        className="pointer-events-none absolute right-0 top-1/4 h-[28rem] w-[14rem] rounded-l-full bg-white/10 blur-3xl"
-        aria-hidden
-      />
-
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <motion.h2
@@ -41,14 +38,19 @@ export default function CaseStudies() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1], delay: i * 0.05 }}
-              className="group relative flex items-center gap-5 py-6 transition-colors duration-300 hover:bg-white/[0.02] sm:gap-8 sm:py-8"
+              className="group relative flex items-center gap-5 py-6 sm:gap-8 sm:py-8"
             >
               <span className="w-10 shrink-0 font-mono text-xs text-muted-foreground transition-colors duration-300 group-hover:text-white sm:w-12 sm:text-sm">
                 {c.n}
               </span>
 
-              <span className="flex-1 text-sm font-semibold text-muted-foreground transition-colors duration-300 group-hover:text-white">
-                {c.category}
+              <span className="flex flex-1 flex-col gap-1 sm:flex-row sm:items-center sm:justify-between sm:gap-8">
+                <span className="text-base font-semibold text-white sm:text-xl">
+                  {c.title}
+                </span>
+                <span className="text-xs uppercase tracking-[0.12em] text-muted-foreground transition-colors duration-300 group-hover:text-white sm:text-sm">
+                  {c.category}
+                </span>
               </span>
 
               <ArrowUpRight className="h-5 w-5 shrink-0 text-muted-foreground transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-white" />

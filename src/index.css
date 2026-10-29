@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Architects+Daughter:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Inter+Tight:wght@400;500;600;700&family=Architects+Daughter:wght@400&display=swap');
 /* base44-workspace-fonts:start */
 @font-face {
   font-family: 'Adobe Caslon';
@@ -15,7 +15,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 2%;
+    --background: 0 0% 0%;
     --foreground: 0 0% 100%;
     --card: 0 0% 4%;
     --card-foreground: 0 0% 100%;
@@ -55,7 +55,7 @@
   }
 
   .dark {
-    --background: 0 0% 3.9%;
+    --background: 0 0% 0%;
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
@@ -90,19 +90,19 @@
   }
 }
 
-
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
 
-  body {
-    @apply bg-background text-foreground font-body;
-  }
-
   html {
     scroll-behavior: smooth;
+    background-color: #000;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    background-color: #000;
   }
 }
 
