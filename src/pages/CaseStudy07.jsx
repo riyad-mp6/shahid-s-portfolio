@@ -36,7 +36,7 @@ const OBJECTIVE =
   "Generate qualified roofing leads and inspection bookings in Florida during peak season while keeping advertising costs measurable.";
 
 const CHALLENGE =
-  "The campaign needed to reach Florida homeowners, capture high-intent roofing searches, generate additional demand through social advertising, and turn incoming leads into qualified opportunities and booked inspections.";
+  "The campaign needed to reach Florida homeowners, capture high-intent roofing searches, generate additional demand through social advertising.";
 
 const WHAT_WE_DID = [
   {
@@ -45,15 +45,15 @@ const WHAT_WE_DID = [
   },
   {
     title: "Meta Ads",
-    text: "Used location-focused campaigns to reach homeowners and generate additional leads through Facebook and Instagram.",
+    text: "Used location-focused campaigns to reach homeowners.",
   },
   {
     title: "Local SEO",
-    text: "Supported local search visibility by improving the discoverability of roofing services and relevant business information.",
+    text: "Supported local search visibility by improving the discoverability of roofing services.",
   },
   {
     title: "Lead Tracking & Optimization",
-    text: "Monitored lead volume, cost per lead, qualification, and booked appointments to evaluate campaign performance.",
+    text: "Monitored lead volume & cost per lead evaluate campaign performance.",
   },
 ];
 
@@ -67,7 +67,7 @@ const PROCESS_STEPS = [
 ];
 
 const PROCESS_TEXT =
-  "Campaign performance was evaluated using lead volume, qualified leads, booked appointments, completed jobs, and estimated job revenue.";
+  " ";
 
 const STATS = [
   { value: "$48,300", label: "Total Ad Spend" },

@@ -66,7 +66,7 @@ const PROCESS_STEPS = [
 ];
 
 const PROCESS_TEXT =
-  "Over six months, the approach combined advertising optimization, listing improvements, and external traffic to address performance bottlenecks and support marketplace growth.";
+  " ";
 
 const STATS = [
   { value: "6,550", label: "Total Order Items" },
@@ -75,7 +75,7 @@ const STATS = [
 ];
 
 const CONCLUSION =
-  "Over the six-month period from September 2024 to February 2025, the strategy focused on improving Amazon PPC efficiency, optimizing product listings, and strengthening conversion performance to support six-figure sales growth.";
+  "The strategy focused on improving Amazon PPC efficiency, optimizing product listings, and strengthening conversion performance to support six-figure sales growth.";
 
 export default function CaseStudy05() {
   return (

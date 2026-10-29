@@ -28,7 +28,7 @@ const DETAILS = [
   { label: "Industry", value: "Health & Fitness" },
   { label: "Market", value: "United Kingdom" },
   { label: "Platforms", value: "Google Ads & Meta Ads" },
-   { label: "Year", value: "2024" },
+  { label: "Year", value: "2024" },
 ];
 
 const OBJECTIVE =

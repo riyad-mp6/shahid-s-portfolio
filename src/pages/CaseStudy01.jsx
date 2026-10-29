@@ -31,7 +31,7 @@ const DETAILS = [
 ];
 
 const OBJECTIVE =
-  "The main objective was to generate qualified real-estate leads in the Florida market through paid advertising on Google Ads and Meta Ads.";
+  "Generate qualified leads in the Florida market through paid advertising on Google Ads and Meta Ads.";
 
 const WHAT_WE_DID = [
   "Paid campaign management",
@@ -51,7 +51,7 @@ const PROCESS_STEPS = [
 ];
 
 const PROCESS_TEXT =
-  "The campaigns were monitored throughout the 3-month period and performance was evaluated based on lead volume, cost per lead, qualified leads, and sales.";
+  " ";
 
 const STATS = [
   { value: "$4,584.80", label: "Total Ad Spend" },
@@ -77,7 +77,7 @@ const PLATFORMS = [
 ];
 
 const CONCLUSION =
-  "Over a 3-month paid advertising campaign, we generated 282 leads through Google Ads and Meta Ads, including 38 qualified leads and 12 sales. The campaign generated leads through both advertising platforms and was evaluated based on lead volume, cost per lead, lead quality, and sales performance.";
+  "Over a 3-month paid advertising campaign, we generated 282 leads through Google Ads and Meta Ads, including 38 qualified leads and 12 sales.";
 
 export default function CaseStudy01() {
   return (

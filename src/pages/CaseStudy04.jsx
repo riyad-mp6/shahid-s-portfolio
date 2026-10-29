@@ -47,15 +47,15 @@ const WHAT_WE_DID = [
   },
   {
     title: "Meta Ads",
-    text: "Used product-focused campaigns to drive discovery, retarget interested shoppers, and encourage purchases.",
+    text: "Used product-focused campaigns to target interested shoppers.",
   },
   {
     title: "Organic Growth",
-    text: "Focused on improving search visibility, product-page relevance, and organic product discovery.",
+    text: "Focused on improving search visibility and product-page relevance.",
   },
   {
     title: "Performance Optimization",
-    text: "Reviewed campaign performance and adjusted acquisition efforts to improve purchase efficiency.",
+    text: "Reviewed campaign performance to improve purchase efficiency.",
   },
 ];
 
@@ -68,7 +68,7 @@ const PROCESS_STEPS = [
 ];
 
 const PROCESS_TEXT =
-  "We combined search-led acquisition, social advertising, and organic discovery, then evaluated performance using purchases, cost per purchase, and return on ad spend.";
+  " ";
 
 const STATS = [
   { value: "7,000", label: "Unique Store Purchases" },

@@ -34,28 +34,26 @@ const DETAILS = [
 ];
 
 const OBJECTIVE =
-  "The primary objective was to drive e-commerce sales for Hape Toys, using Google Ads and Meta Ads. The campaign focused on attracting potential customers, driving product-page traffic, and converting shopping interest into purchases while monitoring advertising costs and sales performance.";
+  "Focused on attracting potential customers, driving product-page traffic, and converting shopping interest into purchases while monitoring advertising costs and sales performance.";
 
 const WHAT_WE_DID = [
   {
     title: "Paid Campaign Management",
-    text: "Managed paid advertising campaigns across Google Ads and Meta Ads to support online sales.",
   },
   {
     title: "Product Promotion",
-    text: "Used paid advertising to bring relevant audiences to Hape Toys' product offerings.",
   },
   {
     title: "Campaign Monitoring",
-    text: "Monitored campaign performance, advertising spend, traffic, and purchase activity.",
+
   },
   {
     title: "Campaign Optimization",
-    text: "Reviewed performance data to identify opportunities to improve campaign efficiency and purchase acquisition.",
+  
   },
   {
     title: "Sales Performance Analysis",
-    text: "Evaluated advertising performance using purchases, cost per purchase, attributed revenue, and return on ad spend (ROAS).",
+
   },
 ];
 
@@ -117,7 +115,7 @@ const PLATFORMS = [
 ];
 
 const CONCLUSION =
-  "Over the four-month campaign from August to November 2025, Google Ads and Meta Ads were used to support Hape Toys' e-commerce customer acquisition and sales efforts. The campaign focused on driving product interest, generating purchases, and evaluating advertising efficiency through cost-per-purchase and return-on-ad-spend metrics.";
+  "The campaign focused on driving product interest, generating purchases, and evaluating advertising efficiency through cost-per-purchase and return-on-ad-spend metrics.";
 
 export default function CaseStudy03() {
   return (

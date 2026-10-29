@@ -16,7 +16,7 @@ export default function QuickResults() {
             className="relative"
           >
             <h2 className="text-6xl font-extrabold tracking-[-0.03em] text-white sm:text-7xl lg:text-8xl">
-              2+ Years
+              2.5+ Years
             </h2>
             <p className="mt-3 text-sm uppercase tracking-[0.16em] text-muted-foreground">
               Marketing Experience

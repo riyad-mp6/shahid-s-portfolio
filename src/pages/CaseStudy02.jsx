@@ -32,7 +32,7 @@ const DETAILS = [
 ];
 
 const OBJECTIVE =
-  "The main objective was to generate qualified real-estate leads in the Los Angeles market through paid advertising on Google Ads and Meta Ads.";
+  "The objective was to generate real-estate leads in the Los Angeles market through paid advertising on Google & Meta Ads.";
 
 const WHAT_WE_DID = [
   "Paid campaign management",
@@ -52,7 +52,7 @@ const PROCESS_STEPS = [
 ];
 
 const PROCESS_TEXT =
-  "The campaigns were monitored throughout the 3-month period and performance was evaluated based on lead volume, cost per lead, qualified leads, and sales.";
+  "";
 
 const STATS = [
   { value: "$5,050", label: "Total Ad Spend" },
@@ -78,7 +78,7 @@ const PLATFORMS = [
 ];
 
 const CONCLUSION =
-  "Over a 3-month paid advertising campaign, we generated 310 leads through Google Ads and Meta Ads, including 44 qualified leads and 14 sales, with a total advertising spend of $5,050.";
+  "We generated 310 leads through Google Ads and Meta Ads, including 44 qualified leads and 14 sales, with a total advertising spend of $5,050.";
 
 export default function CaseStudy02() {
   return (
