@@ -3,7 +3,7 @@ import { Mail, ArrowUpRight } from "lucide-react";
 
 const EMAIL = "zii.shahidulislam@gmail.com";
 const MAIL_URL = `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL}`;
-const COMPANY_NAME = "Rapid Digital Growth";
+const COMPANY_NAME = "Rapid Growth";
 
 const EASE = [0.16, 1, 0.3, 1];
 
