@@ -25,7 +25,7 @@ export default function CaseStudies() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
             className="text-3xl font-bold uppercase tracking-[-0.02em] text-white sm:text-5xl"
           >
-            Case Studies
+            PROJECTS
           </motion.h2>
         </div>
 
