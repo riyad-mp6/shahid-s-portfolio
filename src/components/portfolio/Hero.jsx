@@ -102,7 +102,7 @@ export default function Hero() {
             </button>
 
             <a
-              href="/cv-shahidul.pdf"
+              href="https://drive.google.com/file/d/15oTiO_ggNjQxp_B2V0q9xbqq7K4hfy75/view?usp=sharing"
               download
               className="group inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-3 text-xs font-bold uppercase tracking-[0.12em] text-white transition-all duration-300 hover:bg-white hover:text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             >
