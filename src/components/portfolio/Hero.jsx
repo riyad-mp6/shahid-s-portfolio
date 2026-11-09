@@ -2,16 +2,10 @@ import { useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowDown, Download } from "lucide-react";
 
-/* ------------------------------------------------------------------ */
-/*  Save your collage as: public/image/profile/collage.png             */
-/*  Each card below shows one quarter of that single file.             */
-/* ------------------------------------------------------------------ */
+/* Save your collage as: public/image/profile/collage.png */
 const COLLAGE = "/image/profile/collage.png";
 
-/*
-  col / row pick the quarter of the collage: 0 = left / top, 1 = right / bottom.
-  Reorder, remove or edit these to change what the strip shows.
-*/
+/* col / row pick the quarter of the collage: 0 = left / top, 1 = right / bottom */
 const PHOTOS = [
   { id: "kurta", label: "Shahidul in a red kurta", col: 0, row: 0 },
   { id: "sunset", label: "Shahidul at sunset by the sea", col: 1, row: 0 },
@@ -20,13 +14,11 @@ const PHOTOS = [
 ];
 
 /* Collage geometry (measured from your 1333 x 1999 image) */
-const QUAD_W = 660; // width of one photo
-const QUAD_H = 990; // height of one photo
-const COL_START = [0, 673]; // x where each column begins
-const ROW_START = [0, 1005]; // y where each row begins
+const QUAD_W = 660;
+const QUAD_H = 990;
+const COL_START = [0, 673];
+const ROW_START = [0, 1005];
 const FULL_W = 1333;
-
-const SKILLS = ["Paid Ads", "SEO / GEO", "Sales Funnels", "Content", "Analytics"];
 
 const ease = [0.16, 1, 0.3, 1];
 
@@ -62,7 +54,7 @@ export default function Hero() {
   });
 
   return (
-    <section className="relative overflow-hidden pt-32 pb-16 sm:pt-40 sm:pb-24">
+    <section className="relative overflow-hidden pt-24 pb-16 sm:pt-28 sm:pb-24">
       {/* Soft light behind the strip */}
       <div
         aria-hidden
@@ -70,69 +62,59 @@ export default function Hero() {
       />
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
-        {/* ---------- Top: name on the left, intro on the right ---------- */}
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1.25fr_1fr] lg:items-end lg:gap-14">
-          <motion.h1 {...rise(0)} className="text-white">
-            <span className="block text-base font-medium text-white/60 sm:text-lg">
-              Hi, I’m
-            </span>
-            <span className="mt-2 block text-6xl font-bold uppercase leading-[0.92] tracking-[-0.04em] sm:text-8xl lg:text-[7.5rem]">
-              Shahidul
-            </span>
-            <span className="mt-5 block text-lg font-medium tracking-normal text-white/90 sm:text-xl">
-              Digital &amp; Performance Marketer
-            </span>
-          </motion.h1>
+        {/* ---------- Top: intro on the left, buttons on the far right ---------- */}
+        <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between lg:gap-12">
+          {/* Left: intro */}
+          <div className="min-w-0 flex-1">
+            <motion.h1
+              {...rise(0)}
+              className="text-4xl font-bold uppercase leading-none tracking-[-0.03em] text-white sm:text-6xl lg:whitespace-nowrap lg:text-[4.5rem] xl:text-[5.5rem]"
+            >
+              Hi, I’m Shahidul
+            </motion.h1>
 
-          <div>
             <motion.p
               {...rise(1)}
-              className="max-w-md text-[15px] leading-relaxed text-muted-foreground sm:text-base"
+              className="mt-3 text-base font-semibold uppercase tracking-[0.18em] text-white/80 sm:text-lg"
             >
-              I help businesses generate leads, sales, and measurable growth
-              through paid advertising, SEO/GEO, sales funnels, content, and
-              marketing analytics.
+              Digital &amp; Performance Marketer
             </motion.p>
 
-            <motion.ul {...rise(2)} className="mt-5 flex max-w-md flex-wrap gap-2">
-              {SKILLS.map((skill) => (
-                <li
-                  key={skill}
-                  className="rounded-full border border-white/15 bg-white/[0.03] px-3.5 py-1.5 text-xs font-medium text-white/70 backdrop-blur-sm"
-                >
-                  {skill}
-                </li>
-              ))}
-            </motion.ul>
-
-            <motion.div
-              {...rise(3)}
-              className="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4"
+            <motion.p
+              {...rise(2)}
+              className="mt-6 max-w-2xl text-[15px] leading-relaxed text-muted-foreground sm:text-base"
             >
-              <button
-                onClick={() => scrollToId("case-studies")}
-                className="group inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full bg-white px-7 py-3 text-xs font-bold uppercase tracking-[0.12em] text-black transition-transform duration-300 hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-              >
-                View My Work
-                <ArrowDown className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5" />
-              </button>
-
-              <a
-                href="/cv-shahidul.pdf"
-                download
-                className="group inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-3 text-xs font-bold uppercase tracking-[0.12em] text-white transition-all duration-300 hover:bg-white hover:text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-              >
-                Download CV
-                <Download className="h-4 w-4" />
-              </a>
-            </motion.div>
+              specializing in paid search, paid social, and conversion optimization. 7 projects across 4 industries, with $1M+ in tracked and estimated revenue impact.
+            </motion.p>
           </div>
+
+          {/* Right: buttons */}
+          <motion.div
+            {...rise(3)}
+            className="flex shrink-0 flex-col gap-3 sm:flex-row sm:gap-4"
+          >
+            <button
+              onClick={() => scrollToId("case-studies")}
+              className="group inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full bg-white px-7 py-3 text-xs font-bold uppercase tracking-[0.12em] text-black transition-transform duration-300 hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            >
+              View My Work
+              <ArrowDown className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5" />
+            </button>
+
+            <a
+              href="/cv-shahidul.pdf"
+              download
+              className="group inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-3 text-xs font-bold uppercase tracking-[0.12em] text-white transition-all duration-300 hover:bg-white hover:text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            >
+              Download CV
+              <Download className="h-4 w-4" />
+            </a>
+          </motion.div>
         </div>
 
         {/* ---------- Portrait strip ---------- */}
-        {/* Mobile: swipe sideways. Desktop: four staggered columns. */}
         <div
-          className="-mx-5 mt-14 flex snap-x snap-mandatory gap-3 overflow-x-auto px-5 pb-2 [scrollbar-width:none] sm:-mx-8 sm:px-8 lg:mx-0 lg:mt-20 lg:grid lg:grid-cols-4 lg:gap-5 lg:overflow-visible lg:px-0 lg:pb-14 [&::-webkit-scrollbar]:hidden"
+          className="-mx-5 mt-12 flex snap-x snap-mandatory gap-3 overflow-x-auto px-5 pb-2 [scrollbar-width:none] sm:-mx-8 sm:px-8 lg:mx-0 lg:mt-16 lg:grid lg:grid-cols-4 lg:gap-5 lg:overflow-visible lg:px-0 lg:pb-14 [&::-webkit-scrollbar]:hidden"
           onMouseLeave={() => setActive(0)}
         >
           {PHOTOS.map((photo, i) => {
@@ -166,7 +148,6 @@ export default function Hero() {
                   <Quarter col={photo.col} row={photo.row} alt={photo.label} />
                 </div>
 
-                {/* Bottom shade so the card edge feels soft against the page */}
                 <div
                   aria-hidden
                   className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/60 to-transparent"
@@ -175,6 +156,31 @@ export default function Hero() {
             );
           })}
         </div>
+
+        {/* ---------- Story under the photos ---------- */}
+        <motion.div
+          initial={{ opacity: 0, y: reduce ? 0 : 28 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.8, ease }}
+          className="mt-16 max-w-3xl sm:mt-20"
+        >
+          <h2 className="text-3xl font-bold uppercase leading-[0.98] tracking-[-0.02em] text-white sm:text-4xl lg:text-5xl">
+            A College Dropout.
+          </h2>
+          <div className="mt-6 space-y-4 text-[15px] leading-relaxed text-muted-foreground sm:text-base">
+            <p>
+              Yes, I dropped out of college in 2025, but I never stopped
+              learning. I educate myself by reading books and studying how big
+              businesses grow.
+            </p>
+            <p>
+              I believe companies need people who are genuinely dedicated to
+              growing their business, more than they need a degree holder. What
+              the real world teaches can’t be learned in any classroom.
+            </p>
+          </div>
+        </motion.div>
       </div>
 
       <Divider />
@@ -184,7 +190,7 @@ export default function Hero() {
 
 function Divider() {
   return (
-    <div className="relative mx-auto mt-6 max-w-7xl px-5 sm:px-8 lg:mt-10">
+    <div className="relative mx-auto mt-16 max-w-7xl px-5 sm:mt-24 sm:px-8">
       <div className="h-px w-full bg-border" />
     </div>
   );
