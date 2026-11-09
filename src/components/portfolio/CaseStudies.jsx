@@ -18,7 +18,7 @@ export default function CaseStudies() {
     <section id="case-studies" className="relative overflow-hidden py-16 sm:py-24">
       <div
         aria-hidden
-        className="pointer-events-none absolute right-0 top-1/4 h-[28rem] w-[14rem] rounded-l-full bg-white/10 blur-3xl"
+        className="pointer-events-none absolute right-0 top-1/4 h-[28rem] w-[14rem] rounded-l-full"
       />
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
