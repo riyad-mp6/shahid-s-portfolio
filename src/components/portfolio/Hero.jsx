@@ -166,18 +166,14 @@ export default function Hero() {
           className="mt-16 max-w-3xl sm:mt-20"
         >
           <h2 className="text-3xl font-bold uppercase leading-[0.98] tracking-[-0.02em] text-white sm:text-4xl lg:text-5xl">
-            A College Dropout.
+           I Study How Businesses Grow.
           </h2>
           <div className="mt-6 space-y-4 text-[15px] leading-relaxed text-muted-foreground sm:text-base">
             <p>
-              Yes, I dropped out of college in 2025, but I never stopped
-              learning. I educate myself by reading books and studying how big
-              businesses grow.
+            Behind every successful company is a simple truth: someone solved a problem worth paying for. Companies that grow share something: they understand their customer better than anyone else. I study those patterns every day, from how people decide to how businesses earn their trust.
             </p>
             <p>
-              I believe companies need people who are genuinely dedicated to
-              growing their business, more than they need a degree holder. What
-              the real world teaches can’t be learned in any classroom.
+             Marketing and sales are where I put my ideas to the test. Every campaign is an experiment, and the results tell me what's real.
             </p>
           </div>
         </motion.div>
